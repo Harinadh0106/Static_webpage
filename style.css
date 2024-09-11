@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button,
+span {
+  font-family: "oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0 40px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #584438;
+}
+
+.navbar .burger {
+  display: none;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar .logo img {
+  width: 38px;
+  height: 38px;
+}
+
+.navbar .logo h3 {
+  font-size: 20px;
+}
+
+.navbar .logo h3 a {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.navbar .menu .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.navbar .menu .nav-links a {
+  font-size: 16px;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .burger {
+    display: block;
+  }
+  .navbar .burger div {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background-image: url(/images/living5.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.hero .content {
+  width: 605px;
+  height: 265px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+
+.hero .content h3 {
+  color: #514a47;
+  font-size: 30px;
+}
+
+.hero .content h1 {
+  color: rgb(24, 18, 18);
+  font-size: 60px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background-position: left;
+    justify-content: center;
+    padding-right: 0;
+    padding: 0 20px;
+  }
+  .hero .content h3 {
+    font-size: 20px;
+  }
+
+  .hero .content h1 {
+    font-size: 40px;
+  }
+}
+
+/* About Section */
+.about {
+  background-color: #23242b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  gap: 100px;
+}
+
+.about h2 {
+  font-size: 40px;
+  color: #8e8e8e;
+}
+
+.about .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.about .about-container .about-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.about .about-container .about-card h3 {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.about .about-container .about-card p {
+  color: #717a87;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .about {
+    padding: 100px 0;
+    gap: 50px;
+  }
+}
+
+/* Services section */
+.services {
+  background-color: #1f212a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  gap: 100px;
+}
+
+.services h2 {
+  font-size: 40px;
+  color: #8e8e8e;
+}
+
+.services .services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.services .services-container .services-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.services .services-container .services-card img {
+  width: 300px;
+}
+
+.services .services-container .services-card h3 {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .services {
+    padding: 100px 0;
+    gap: 50px;
+  }
+}
+
+/* Projects */
+.projects {
+  background-color: #23242b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  gap: 100px;
+}
+
+.projects h2 {
+  font-size: 40px;
+  color: #8e8e8e;
+}
+
+.projects .projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects .projects-container .project-card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.projects .projects-container .project-card img {
+  width: 250px;
+}
+
+.projects .projects-container .project-card h3 {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .projects {
+    padding: 100px 0;
+    gap: 50px;
+  }
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #6c4343;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .top-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.footer .top-footer .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.footer .top-footer h2 {
+  color: #956767;
+  font-size: 40px;
+}
+
+.footer .top-footer h2 span {
+  display: block;
+}
+
+.footer .top-footer h3 {
+  font-size: 28px;
+  color: white;
+}
+
+.footer .top-footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* .footer .top-footer .contact .phone img {
+  width: 40px;
+} */
+
+.footer .top-footer .contact .img1{
+  width: 40px;
+}
+
+.footer .phone, .footer .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.footer .top-footer .img2{
+  width: 579px;
+  height: 434px;
+}
+
+.footer .bottom-footer{
+  border-top: 1px solid #956767;
+  width: 82%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.footer .bottom-footer p{
+  font-weight: 400;
+  font-size: 15px;
+}
+
+@media(max-width:1150px){
+.footer .top-footer{
+  flex-direction: column-reverse;
+}
+
+.footer{
+  padding: 30px;
+  padding-top: 50px;
+}
+
+.footer .top-footer .img2{
+  width: 300px;
+  height: auto;
+}
+
+}
